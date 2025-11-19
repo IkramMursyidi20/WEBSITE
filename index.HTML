@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Storyboard About Myself</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(45deg, #000000, #1a1a1a, #000000);
+      background-size: 300% 300%;
+      animation: gradientAnimation 6s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 30%; }
+      30% { background-position: 100% 30%; }
+      100% { background-position: 0% 30%; }
+    }
+
+    header h1 {
+      font-family: "Copperplate Gothic Bold", "Copperplate Gothic", serif;
+      font-size: 50px;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+      color: #ff8c00;
+      text-shadow: 0 0 10px rgba(255,140,0,0.6);
+    }
+
+    header p {
+      font-family: "Copperplate Gothic Bold", "Copperplate Gothic", serif;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 4px solid #ff8c00;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .header-quote {
+      max-width: 420px;
+      width: 420px;
+    }
+
+    .header-quote blockquote {
+      background: rgba(255, 140, 0, 0.15);
+      border-left: 5px solid #ff8c00;
+      padding: 18px;
+      font-style: italic;
+      font-size: 17px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(255,140,0,0.5);
+      text-align: left;
+      width: 100%;
+    }
+
+    nav {
+      background-color: rgba(20, 20, 20, 0.95);
+      padding: 10px;
+      text-align: center;
+      border-bottom: 2px solid #ff8c00; 
+    }
+
+    nav a {
+      color: #ff8c00;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      background-color: #111111;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(255, 165, 0, 0.4);
+      color: white;
+      border-left: 5px solid #ff8c00;
+    }
+
+    section h2 {
+      color: #ff8c00;
+    }
+
+    .photo {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 20px auto;
+      border-radius: 10px;
+      border: 5px solid #ff8c00;
+      box-shadow: 0 2px 10px rgba(255,165,0,0.6);
+    }
+
+    .childhood-photos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .childhood-photos img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+      border: 5px solid #ff8c00;
+      box-shadow: 0 2px 10px rgba(255,165,0,0.6);
+    }
+
+    .social-icons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s;
+      filter: drop-shadow(0 0 6px #ff8c00);
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.15);
+    }
+
+    footer {
+      text-align: center;
+      background-color: rgba(0,0,0,0.95);
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 3px solid #ff8c00;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Ikram's Website</h1>
+    <p>STORYLIFE OF IKRAM</p>
+    <p>By Ikram</p>
+
+    <div class="header-flex">
+      <img src="ss.jpg" alt="Ikram Profile Photo" class="photo" style="max-width:300px; margin:0;">
+      <div class="header-quote">
+        <blockquote>
+          “The future belongs to those who believe in the beauty of their dreams.”<br>— Eleanor Roosevelt
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+      </a>
+      <a href="https://wa.me/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" />
+      </a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#intro">Introduction</a>
+    <a href="#childhood">Childhood</a>
+    <a href="#school">School Life</a>
+    <a href="#dreams">Dreams & Goals</a>
+    <a href="#conclusion">Conclusion</a>
+  </nav>
+
+  <section id="intro" style="text-align: justify;">
+    <h2>Introduction</h2>
+    <p>Hello! My name is Muhammad Ikram Mursyidi. I am a 20-year-old student pursuing Information Management, and I have always been passionate about exploring new knowledge and discovering how technology shapes the world around us. I enjoy expressing my creativity through design, writing, and digital projects, and I’m constantly looking for new skills to learn and new ideas to develop. Whether it’s designing visuals, creating websites, or improving my technical abilities, I love turning imagination into something real. This storyboard shares my journey, the experiences that shaped me, and the dreams that continue to inspire my path forward.</p>
+    <img src="yy.jpg" class="photo">
+  </section>
+
+  <section id="childhood" style="text-align: justify;">
+    <h2>My Childhood</h2>
+    <p>I was born in Putrajaya, and later my family moved to Penang, where I spent most of my childhood and created many meaningful memories. Growing up in Penang had a big influence on my character, because the environment, the people, and the culture around me shaped the way I think and the person I am becoming. When I was young, I really enjoyed spending time outdoors, especially playing badminton with my friends and swimming whenever I had the chance. These activities taught me discipline, teamwork, and the importance of staying active and healthy. My childhood was filled with simple moments that made me happy, and these experiences helped build the values and creativity that guide me today.</p>
+
+    <div class="childhood-photos">
+      <img src="cc.jpg" class="photo">
+      <img src="pp.jpg" class="photo">
+    </div>
+  </section>
+
+  <section id="school" style="text-align: justify;">
+    <h2>My School Life</h2>
+    <p>My school journey began at SK Permatang Binjai, where I developed the basic foundations of learning and discovered the joy of exploring new knowledge. During my primary school years, I built confidence, made close friendships, and learned important values that shaped my character. The supportive environment and dedicated teachers encouraged me to be curious, disciplined, and creative.
+<br><br>
+As I moved into secondary school at SMK Permatang Tok Jaya, I began to understand myself better and discover my strengths. My experiences there taught me the importance of teamwork, leadership, and responsibility through group projects, class activities, and school programs. This stage of my life also deepened my interest in technology, especially as I became more involved in digital tools, problem-solving tasks, and subjects that required analytical thinking. SMKPTJ played a major role in guiding me toward my future goals and helping me identify the path I wanted to pursue.
+<br><br>
+After completing secondary school, I continued my studies at UiTM Kedah, where I am currently pursuing a diploma in Information Management. Life in university has brought a new level of independence and maturity. Through my programme, I have gained valuable skills in data handling, information systems, digital management, research, and communication. UiTM Kedah has provided a space for me to grow academically and personally, while helping me prepare for a future career in the field of technology and information. Each semester teaches me something new and strengthens my passion for this field.</p>
+    <img src="kk.jpg" class="photo">
+  </section>
+
+  <section id="dreams" style="text-align: justify;">
+    <h2>My Dreams & Goals</h2>
+    <p>In the future, I aspire to become a software developer and designer who builds technology that truly helps people. I want to create digital solutions that make everyday life easier, smarter, and more meaningful, whether through apps, websites, or innovative tools that solve real problems. I hope to continuously improve my skills in coding, design, and creative thinking so I can bring my ideas to life with purpose and impact. My dream is to contribute to the fast-growing world of technology by developing projects that inspire others, improve productivity, and make a positive difference in society. I want to build a career where I can grow, explore new possibilities, and create technology that leaves a lasting value for the future.</p>
+    <img src="mm.jpeg" class="photo">
+  </section>
+
+  <section id="conclusion" style="text-align: justify;">
+    <h2>Conclusion</h2>
+    <p>Thank you for reading my storyboard! My journey is just beginning, and I hope to grow more each day as I continue discovering who I am and what I want to achieve in life. I believe that every experience, challenge, and opportunity will help shape me into a better version of myself. I will keep learning, improving my skills, and pushing myself to reach new goals while staying true to my passions and values. I am excited for the future that awaits me, and I hope to make a positive impact on the people around me through my actions, creativity, and dedication.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Ikram Mursyidi. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
